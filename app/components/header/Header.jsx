@@ -68,6 +68,9 @@ export default function Header() {
                     <span className="cart-count"> 0 </span>
                   </Link>
                 </div>
+                <div className="sign-btn">
+                  <button className="text-xl text-white font-medium px-6 py-2 rounded-full border border-1 border-gray-400"> Sign In </button>
+                </div>
              </div>
           </div>
        </div>

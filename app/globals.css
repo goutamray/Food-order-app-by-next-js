@@ -8,12 +8,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-
+h1,h2,h3,h4,h5,h6,p{
+  font-family: "Roboto", sans-serif;
+}
 
 /****** header css ******/
 header.fixed{
   background-color: #fff;
   padding: 15px 0px !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 header.fixed .menu nav ul li a{
   color: #000 !important;
@@ -53,7 +56,10 @@ header.fixed .cart-data a svg {
 header.fixed .logo {
   width: 90px !important;
 }
-
+header.fixed .sign-btn button{
+   border-color: 1px solid rgb(0, 0, 0) !important;
+   color: #000 !important;
+ }
 
 /******* Slider csss *******/
 .custom-swiper {
@@ -97,6 +103,14 @@ header.fixed .logo {
 
 }
 
+
+/* button */
+.my-btn:hover{
+  border: 1px solid red !important;
+  background-color: transparent !important;
+  color: red !important;
+  transition: 0.5 all ease-in-out ;
+}
 
 
 
