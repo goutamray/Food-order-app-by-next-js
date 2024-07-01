@@ -37,8 +37,8 @@ header.fixed .menu nav ul li a{
 }
 .cart-data span{
   background-color: red;
-  height: 15px;
-  width: 15px;
+  height: 17px;
+  width: 17px;
   border-radius: 50%;
   color: #fff;
   font-size: 14px;
@@ -61,6 +61,8 @@ header.fixed .sign-btn button{
    color: #000 !important;
  }
 
+
+
 /******* Slider csss *******/
 .custom-swiper {
   height: 650px; /* Set height of the Swiper container */
@@ -82,14 +84,14 @@ header.fixed .sign-btn button{
   width: 40px !important;
   background-color: #fff !important;
   border-radius: 50%;
-  /* right: 3% !important; */
+  opacity: 0;
 }
  .swiper-button-prev {
   height: 40px !important;
   width: 40px !important;
   background-color: #fff !important;
   border-radius: 50%;
-  /* left: 3% !important; */
+  opacity: 0;
 }
 
 .swiper-button-next::after  {
@@ -102,7 +104,10 @@ header.fixed .sign-btn button{
   font-size: 15px !important;
 
 }
-
+.custom-swiper:hover .swiper-button-next , .custom-swiper:hover .swiper-button-prev {
+  opacity: 1;
+  transition: all ease-in-out 0.3s;
+}
 
 /* button */
 .my-btn:hover{
@@ -111,6 +116,30 @@ header.fixed .sign-btn button{
   color: red !important;
   transition: 0.5 all ease-in-out ;
 }
+
+/**** product css ******/
+
+.product-box ul li.active img{
+   opacity: 1;
+}
+.product-box ul li.active h3{
+  color: red !important;
+}
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: red !important;
+}
+
+span.price   {
+  background-color: #642f21;
+  color: #f7be27;
+  padding: 8px 12px ;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+
 
 
 
