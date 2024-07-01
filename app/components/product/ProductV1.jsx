@@ -21,7 +21,7 @@ const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 export default function ProductV1() {
   return (
-    <div >
+    <div className="w-[300px]">
        <div className="image-wrapper p-4 relative border-1 border-gray-300 rounded-md">
            <Image src={bur1} alt="burger" className="h-48 w-60"/> 
            <Checkbox {...label} icon={<FavoriteBorder />} checkedIcon={<Favorite />} className="absolute top-2 right-2 " />

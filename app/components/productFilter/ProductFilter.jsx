@@ -18,32 +18,33 @@ export default function ProductFilter() {
 
 
   return (
-    <div className="py-16">
+    <div className="py-24">
       <div className="container">
         {/* Product tab */}
-         <div className="product-box w-[800px] mx-auto">
-           <ul className="list list-inline text-center flex justify-between gap-4 xl:gap-12">
+         <div className="product-box w-400 md:w-[800px] mx-auto">
+           <ul className="list list-inline text-center flex justify-around gap-2 md:gap-6 xl:gap-12">
             <li className={`list-inline-item cursor-pointer  ${isActiveTab === 0 && "active"}`} onClick={() => filterProduct(0)}> 
-              <Image src={burder1} alt="burger" className="w-16 h-16 mb-3 mx-auto opacity-80" />
-              <h3 className="text-[#642F21] text-[22px] font-bold "> BURGERS </h3>
+              <Image src={burder1} alt="burger" className="w-8 h-18 xl:w-16 xl:h-16 mb-3 mx-auto opacity-80" />
+              <h3 className="text-[#642F21] text-[16px]  xl:text-[22px] font-bold "> BURGERS </h3>
             </li>
             <li className={`list-inline-item cursor-pointer  ${isActiveTab === 1 && "active"}`} onClick={() => filterProduct(1)}> 
-              <Image src={burder2} alt="burger" className="w-16 h-16 mb-3 mx-auto opacity-70" />
-              <h3 className="text-[#642F21] text-[22px] font-bold "> DESSERTS </h3>
+              <Image src={burder2} alt="burger" className="w-8 h-18 xl:w-16 xl:h-16 mb-3 mx-auto opacity-80" />
+              <h3 className="text-[#642F21] text-[16px]  xl:text-[22px] font-bold "> DESSERTS </h3>
             </li>
+     
             <li className={`list-inline-item cursor-pointer   ${isActiveTab === 2 && "active"}`} onClick={() => filterProduct(2)}> 
-              <Image src={burder3} alt="burger" className="w-16 h-16 mb-3 mx-auto opacity-80" />
-              <h3 className="text-[#642F21] text-[22px] font-bold  "> SALADS </h3>
+              <Image src={burder3} alt="burger" className="w-8 h-18 xl:w-16 xl:h-16 mb-3 mx-auto opacity-80" />
+              <h3 className="text-[#642F21]  text-[16px]  xl:text-[22px] font-bold  "> SALADS </h3>
             </li>
             <li className={`list-inline-item cursor-pointer  ${isActiveTab === 3 && "active" }`} onClick={() => filterProduct(3)}> 
-              <Image src={burder4} alt="burger" className="w-16 h-16 mb-3 mx-auto opacity-60" />
-              <h3 className="text-[#642F21] text-[22px] font-bold "> SIDES </h3> 
+              <Image src={burder4} alt="burger" className="w-8 h-18 xl:w-16 xl:h-16 mb-3 mx-auto opacity-80" />
+              <h3 className="text-[#642F21]  text-[16px]  xl:text-[22px] font-bold "> SIDES </h3> 
             </li>
            </ul>
          </div>
 
          {/* Product grid */}
-         <div className="productList flex gap-5 pt-6">
+         <div className="productList  flex-wrap justify-center items-center mx-auto md:flex gap-4 pt-6">
             <ProductV1 />
             <ProductV1 />
             <ProductV1 /> 

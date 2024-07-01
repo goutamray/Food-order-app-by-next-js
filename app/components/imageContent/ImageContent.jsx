@@ -19,22 +19,22 @@ export default function ImageContent() {
            <div className="space-y-5">
                <h2 className="text-[#642F21] text-4xl xl:text-[52px]  font-bold leading-tight w-[350px] xl:w-[590px]" > NOTHING BRINGS  PEOPLE TOGETHER LIKE  A GOOD BURGER </h2>
                <p className="text-[#757575] text-[18px] w-[350px] xl:w-[470px]"> Porta semper lacus cursus, feugiat primis ultrice a ligula  risus auctor an tempus feugiat dolor lacinia cubilia curae at  integer orci congue and metus in mollislorem primis gravida </p>
-               <div className="photo-box flex  md:flex-row justify-between xl:pt-2 w-[400px] xl:w-[500px] ">   
+               <div className="photo-box flex  md:flex-row justify-between xl:pt-2 w-[370px] xl:w-[500px] ">   
                    <div className="space-y-3 ">
-                     <Image src={berger} alt="burger" className="h-16 w-16 mx-auto"/>
-                     <h2 className="text-[19px] text-[#642F21] font-semibold"> BURGERS </h2>
+                     <Image src={berger} alt="burger" className="h-12 w-12 xl:h-16 xl:w-16 mx-auto"/>
+                     <h2 className="text-[16px] xl:text-[19px] text-[#642F21] font-semibold"> BURGERS </h2>
                    </div>
                    <div className="space-y-3">
-                     <Image src={berger2} alt="burger" className="h-16 w-16 "/>
-                     <h2 className="text-[19px] text-[#642F21] font-semibold"> FRIES </h2>
+                     <Image src={berger2} alt="burger"className="h-12 w-12 xl:h-16 xl:w-16 mx-auto" />
+                     <h2 className="text-[16px] xl:text-[19px] text-[#642F21] font-semibold"> FRIES </h2>
                    </div>
                    <div className="space-y-3">
-                     <Image src={berger3} alt="burger" className="h-16 w-16 "/>
-                     <h2 className="text-[19px] text-[#642F21] font-semibold"> CHICKEN </h2>
+                     <Image src={berger3} alt="burger" className="h-12 w-12 xl:h-16 xl:w-16 mx-auto"/>
+                     <h2 className="text-[16px] xl:text-[19px] text-[#642F21] font-semibold"> CHICKEN </h2>
                    </div>
                    <div className="space-y-3">
-                     <Image src={berger4} alt="burger" className="h-16 w-16 "/>
-                     <h2 className="text-[19px] text-[#642F21] font-semibold">SALADS </h2>
+                     <Image src={berger4} alt="burger" className="h-12 w-12 xl:h-16 xl:w-16 mx-auto"/>
+                     <h2 className="text-[16px] xl:text-[19px] text-[#642F21] font-semibold">SALADS </h2>
                    </div>
                </div>
            </div>
