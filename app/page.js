@@ -5,6 +5,7 @@ import ImageContent from "./components/imageContent/ImageContent";
 import Product from "./components/product/Product";
 import ProductFilter from "./components/productFilter/ProductFilter";
 import PromoBanner from "./components/promoBanner/PromoBanner";
+import Testimonial from "./components/testimonial/Testimonial";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
           <Product /> 
           <PromoBanner /> 
           <ProductFilter /> 
+          <Testimonial />
 
         </div>
   );

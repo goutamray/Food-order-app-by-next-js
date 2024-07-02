@@ -31,7 +31,6 @@ header.fixed .menu nav ul li a{
    color: #F7BE27 !important;
    transition: all ease-in-out 0.3s ;
 }
-
 .cart-data a{
   position: relative;
 }
@@ -60,7 +59,6 @@ header.fixed .sign-btn button{
    border-color: 1px solid rgb(0, 0, 0) !important;
    color: #000 !important;
  }
-
 
 
 /******* Slider csss *******/
@@ -97,19 +95,17 @@ header.fixed .sign-btn button{
 .swiper-button-next::after  {
   color: rgb(62, 62, 62);
   font-size: 15px !important;
-
 }
- .swiper-button-prev::after {
+.swiper-button-prev::after {
   color: rgb(62, 62, 62);
   font-size: 15px !important;
-
 }
 .custom-swiper:hover .swiper-button-next , .custom-swiper:hover .swiper-button-prev {
   opacity: 1;
   transition: all ease-in-out 0.3s;
 }
 
-/* button */
+/******* button *******/
 .my-btn:hover{
   border: 1px solid red !important;
   background-color: transparent !important;
@@ -124,14 +120,10 @@ header.fixed .sign-btn button{
 .product-box ul li.active h3{
   color: red !important;
 }
-
-
-
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
   color: red !important;
 }
-
-span.price   {
+span.price{
   background-color: #642f21;
   color: #f7be27;
   padding: 8px 12px ;
@@ -143,8 +135,22 @@ span.price   {
 
 
 
+/*** testimonial css*****/
+.testimonial-swiper {
+  height: 550px;
+}
+.testimonial-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px; /* Set height of each slide */
+  color: white; /* Add text color if needed */
+}
 
-/* responsive css */
+
+
+
+/******** responsive css *********/
 @media (max-width : 576px) {
   .custom-swiper {
     height: 350px; /* Set height of the Swiper container */

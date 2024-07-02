@@ -35,8 +35,8 @@ export default function Header() {
                 <Image src={logo} alt="logo" height={90} width={120}/> 
              </Link>
           </div>
-          <div className="menu flex items-center justify-end gap-4">
-             <nav>
+          <div className="menu flex items-center justify-end gap-4 ">
+             <nav className="hidden md:block ">
                <ul className="flex items-center gap-x-7 mb-0">
                 <li> 
                   <Link className=" text-white font-semibold no-underline " href="/"> Home </Link>
@@ -59,7 +59,7 @@ export default function Header() {
                </ul>
              </nav>
              <div className="flex gap-3 items-center ">
-                 <div> 
+                 <div className="hidden md:block "> 
                     <span className="text-[#F7BE27] text-2xl font-bold flex items-center gap-1 justify-center"> <FaPhoneVolume className="text-2xl text-[#F7BE27] font-bold "/>01755302053 </span>
                 </div>
                 <div className="cart-data">

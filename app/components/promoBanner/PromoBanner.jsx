@@ -32,17 +32,17 @@ export default function PromoBanner() {
     <div style={bgStyleBanner2} className="py-24 ">
       <div className="container flex flex-col xl:flex-row justify-between items-center gap-4 ">
         {/* collumn 1 */}
-         <div className="flex gap-4 items-center ">
+         <div className="flex flex-col xl:flex-row gap-4 items-center ">
             <div>
                <h2 className="text-3xl xl:text-5xl text-white font-bold uppercase tracking-tighter "> THE </h2>
                <h1 className="text-white text-5xl xl:text-8xl tracking-tighter font-bold w-[120px]"> BIGTI BURGER </h1>
                <p className="text-white/90 font-semibold text-xl w-[220px] xl:w-[420px]">  Mushroom patty, vegan cheese, lettuce, tomatoes, avocado ligula rutrum risus ultrice luctus ligula congue a </p>
-               <button className="bg-red-600 text-white border-2 border-red-600 px-4 py-2 w-[140px] xl:w-[220px] rounded-sm text-xl font-medium uppercase hover:bg-transparent hover:border-2 hover:border-white transition-all duration-300 flex items-center gap-2"> <LiaShoppingBagSolid className="text-white text-2xl"/> add to cart </button>
+               <button className="bg-red-600 text-white border-2 border-red-600 px-4 py-2 w-[200px] xl:w-[220px] rounded-sm text-xl font-medium xl:uppercase hover:bg-transparent hover:border-2 hover:border-white transition-all duration-300 flex items-center gap-2"> <LiaShoppingBagSolid className="text-white text-2xl"/> Add to cart </button>
             </div>
       
           {/* collumn 2 */}
-            <div className="relative">    
-               <Image src={burder} alt="burger" className="w-[400] h-[400px] md:w-[600px] md:h-[600px] " /> 
+            <div className="relative mt-4 xl:mt-0">    
+               <Image src={burder} alt="burger" className="w-[400] h-[300px]  md:w-[600px] md:h-[600px] " /> 
                <div style={bgStyleBanner} className="h-[150px] w-[150px] xl:h-[200px] xl:w-[200px] text-white flex flex-col justify-center items-center absolute -top-4 right-0 ">
                    <h3 className="font-semibold"> ONLY </h3>
                    <h2 className="text-4xl font-bold"> $10.35 </h2>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 // react icons 
-import { CiStar } from "react-icons/ci";
+
 import { LiaShoppingBagSolid } from "react-icons/lia";
 
 // images 
