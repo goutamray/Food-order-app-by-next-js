@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="py-10 bg-[#ffffff] ">
+    <div className="pt-16 pb-10 bg-[#e3e3e3]">
        <div className="container">
            <div className="footer-part flex  justify-center items-center flex-col gap-y-8 ">
               <Image src={logo} alt="logo" className="w-[220px] h-[100px] "/> 

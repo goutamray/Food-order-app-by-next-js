@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import burger from "@/public/assets/product/burger11.jpg"
@@ -14,11 +15,12 @@ import Stack from '@mui/material/Stack';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
-export default function ProductV2() {
+export default function ProductV3() {
   return (
-    <div className="bg-white border-1 group border-gray-300 rounded-md overflow-hidden w-[340px] xl:w-[310px] relative">
-      <div className="h-[260px] overflow-hidden ">
-       <Image src={burger} alt="burger"  className="w-full h-[260px]  object-cover group-hover:scale-110 transition-all duration-300"/> 
+    <div>
+     <div className="bg-white  group rounded-md overflow-hidden w-[390px] md:w-[340px] relative">
+      <div className="h-[260px] overflow-hidden rounded-md">
+       <Image src={burger} alt="burger"  className="w-full h-[260px]  object-cover group-hover:scale-110 transition-all duration-300 rounded-md "/> 
       </div>
       <div className="absolute top-3 left-3 ">
         <h5 className="bg-[#3f2416] text-white text-sm uppercase text-
@@ -50,14 +52,9 @@ export default function ProductV2() {
           </div>
        
     </div>
+    </div>
   )
 }
-
-
-
-
-
-
 
 
 

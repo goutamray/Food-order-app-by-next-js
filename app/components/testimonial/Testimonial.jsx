@@ -80,7 +80,7 @@ export default function Testimonial() {
         <SwiperSlide key={index} >
            <div className="flex flex-col justify-center items-center space-y-4">
              <Image src={item.image} alt="man" className="h-24 w-24 rounded-full "/> 
-             <p className="text-white/80 text-2xl font-semibold w-[360px]  xl:w-[900px] mx-auto text-center ">{item.desc}</p>
+             <p className="text-white/80 text-2xl font-semibold w-[360px] md:w-[550px]  xl:w-[900px] mx-auto text-center ">{item.desc}</p>
              <div className="pt-3 text-center ">
                  <span className="flex gap-2 justify-center items-center">  
                      <FaStar className="text-[#f7be27] text-md " /> 

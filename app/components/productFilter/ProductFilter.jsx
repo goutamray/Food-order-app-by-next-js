@@ -21,7 +21,7 @@ export default function ProductFilter() {
       <div className="container">
         {/* Product tab */}
          <div className="product-box w-400 md:w-[800px] mx-auto">
-           <ul className="list list-inline text-center grid grid-cols-2 xl:grid-cols-4 gap-2 xl:gap-4">
+           <ul className="list list-inline text-center grid grid-cols-2 md:grid-cols-4 gap-2 xl:gap-4">
             <li className={`list-inline-item cursor-pointer  ${isActiveTab === 0 && "active"}`} onClick={() => filterProduct(0)}> 
               <Image src={burder1} alt="burger" className="w-8 h-18 xl:w-16 xl:h-16 mb-3 mx-auto opacity-80" />
               <h3 className="text-[#642F21] text-[16px]  xl:text-[22px] font-bold "> BURGERS </h3>

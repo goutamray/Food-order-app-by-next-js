@@ -147,8 +147,17 @@ span.price{
   color: white; /* Add text color if needed */
 }
 
-
-
+/* logo carousel */
+.custom-swiper-slider{
+  height: 280px;
+}
+.custom-swiper-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px; /* Set height of each slide */
+  color: white; /* Add text color if needed */
+}
 
 /******** responsive css *********/
 @media (max-width : 576px) {
