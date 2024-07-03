@@ -18,7 +18,7 @@ const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 export default function ProductV3() {
   return (
     <div>
-     <div className="bg-white  group rounded-md overflow-hidden w-[390px] md:w-[340px] relative">
+     <div className="bg-white  group rounded-md overflow-hidden w-[390px] md:w-[340px] xl:w-[400px] relative">
       <div className="h-[260px] overflow-hidden rounded-md">
        <Image src={burger} alt="burger"  className="w-full h-[260px]  object-cover group-hover:scale-110 transition-all duration-300 rounded-md "/> 
       </div>

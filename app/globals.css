@@ -106,6 +106,9 @@ header.fixed .sign-btn button{
 }
 
 /******* button *******/
+.my-btn{
+  border: 1px solid red !important;
+}
 .my-btn:hover{
   border: 1px solid red !important;
   background-color: transparent !important;

@@ -56,12 +56,12 @@ export default function PromoBanner() {
             <div className="flex md:flex-row xl:flex-col gap-4">
 
               <div className="text-center p-4 border border-gray-200 rounded-md hover:bg-[#ffc934] transition-all duration-300  ">
-                 <Image src={komil} alt="komil" className="h-24 w-28 md:h-52 md:w-52"/>
+                 <Image src={komil} alt="komil" className="h-24 w-28 md:h-52 md:w-52 xl:h-28 xl:w-28 mx-auto " />
                  <h5 className="text-white text-md font-medium"> Komil berger </h5>
               </div>
 
               <div className="text-center p-4 border border-gray-200 rounded-md hover:bg-[#ffc934] transition-all duration-300 ">
-                 <Image src={sough} alt="komil" className="h-24 w-28  md:h-52 md:w-52 "/>
+                 <Image src={sough} alt="komil" className="h-24 w-28 md:h-52 md:w-52 xl:h-28 xl:w-28 mx-auto " />
                  <h5 className="text-white text-md font-medium"> Komil berger </h5>
               </div>     
 
