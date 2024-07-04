@@ -4,7 +4,7 @@ import { SlCalender } from "react-icons/sl";
 
 export default function BlogSingle({ item }) {
   return (
-    <div className="group border-1 border-gray-200 rounded-md overflow-hidden md:w-[340px] xl:w-[400px]">
+    <div className="group border-1 border-gray-200 rounded-md overflow-hidden w-[320px] md:w-[340px] xl:w-[400px] ">
       <div className="flex flex-col space-y-4 relative">
         <div className="relative h-[300px] w-[400px] overflow-hidden ">
          <Image src={item.image} alt="blog" className="h-[300px] xl:w-[400px] rounded-md group-hover:scale-110 overflow-hidden transition-all duration-300 "/>

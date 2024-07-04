@@ -20,10 +20,10 @@ export default function WhatElse() {
     <div className=" py-24" style={bgStyleBanner}>
        <div className="container">   
           <div className="flex flex-col justify-center items-center space-y-5">
-            <h1 className="text-6xl text-[#f7be27] font-bold "> BURGERS… <span className="text-[#642f21]"> WHAT ELSE? </span> </h1>
-            <p className="w-[780px] text-[#757575] text-[20px] text-center"> Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae integer orci congue and metus mollislorem primis in integer metus curae integer orci congue integer and primis in integer metus mollis faucibus </p> 
-            <div className="photo-box flex  md:flex-row justify-between xl:pt-2 w-[570px] xl:w-[800px] xl:mt-3">      
-                   <div className="space-y-3 "> 
+            <h1 className="text-5xl xl:text-6xl text-[#f7be27] font-bold "> BURGERS… <span className="text-[#642f21]"> WHAT ELSE? </span> </h1>
+            <p className="w-[330px] md:w-[550px] xl:w-[780px] text-[#757575] text-[20px] text-center"> Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae integer orci congue and metus mollislorem primis in integer metus curae integer orci congue integer and primis in integer metus mollis faucibus </p> 
+            <div className="photo-box grid grid-cols-2  md:grid-cols-6 xl:grid-cols-6 gap-4 place-items-center xl:mt-3">      
+                   <div className="space-y-3 ">   
                      <Image src={berger} alt="burger" className="h-12 w-12 xl:h-16 xl:w-16 mx-auto"/>
                      <h2 className="text-[16px] xl:text-[19px] text-[#642F21] font-semibold"> BURGERS </h2>
                    </div>
