@@ -25,12 +25,12 @@ export default function Footer() {
               </div>
               <div>
                 <ul className="flex flex-wrap justify-center gap-1">
-                  <li> <Link className="text-[15px] font-bold text-[#757575] no-underline hover:text-[#f7be27] duration-300 transition-all uppercase border-r-2 border-gray-500 px-3" href="#" > About </Link> </li> 
+                  <li> <Link className="text-[15px] font-bold text-[#757575] no-underline hover:text-[#f7be27] duration-300 transition-all uppercase border-r-2 border-gray-500 px-3" href="/about" > About </Link> </li> 
                   <li> <Link className="text-[15px] font-bold text-[#757575] no-underline hover:text-[#f7be27] duration-300 transition-all uppercase border-r-2 border-gray-500 px-3" href="#" > Menu </Link> </li> 
                   <li> <Link className="text-[15px] font-bold text-[#757575] no-underline hover:text-[#f7be27] duration-300 transition-all uppercase border-r-2 border-gray-500 px-3" href="#" > Order Now </Link> </li> 
                   <li> <Link className="text-[15px] font-bold text-[#757575] no-underline hover:text-[#f7be27] duration-300 transition-all uppercase border-r-2 border-gray-500 px-3" href="#" > Galary </Link> </li> 
                   <li> <Link className="text-[15px] font-bold text-[#757575] no-underline hover:text-[#f7be27] duration-300 transition-all uppercase border-r-2 border-gray-500 px-3" href="#" > Locations </Link> </li> 
-                  <li> <Link className="text-[15px] font-bold text-[#757575] no-underline hover:text-[#f7be27] duration-300 transition-all uppercase pl-3" href="#" > Contact </Link> </li> 
+                  <li> <Link className="text-[15px] font-bold text-[#757575] no-underline hover:text-[#f7be27] duration-300 transition-all uppercase pl-3" href="/contact" > Contact </Link> </li> 
                 </ul>
                 <p className="text-[18px] font-light text-[#757575] text-center "> 2021 © Copyright, Testo. All rights reserved. </p> 
               </div>

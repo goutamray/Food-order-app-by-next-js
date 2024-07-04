@@ -15,7 +15,7 @@ export default function Header() {
 
   useEffect(() => {
      window.addEventListener("scroll", () => {
-      let postition = window.pageYOffset;
+      let postition = window.scrollY;
     if (headerRef.current) {
        if (postition > 100 ) {
         headerRef.current.classList.add('fixed');
