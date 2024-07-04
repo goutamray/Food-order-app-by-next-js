@@ -135,6 +135,15 @@ span.price{
   font-weight: 800;
 }
 
+.custom-shadow{
+    margin-bottom: 0;
+    padding: 25px 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgb(0 26 112 / 10%);
+
+}
+
 
 
 
