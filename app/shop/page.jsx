@@ -30,7 +30,7 @@ export default function page() {
 
 
          {/* products All */}
-         <div className="container">
+         <div className="container pb-10">
           <div className="pb-5">
              <div className="productList grid  grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 place-items-center ">
                  <ProductV2 />
