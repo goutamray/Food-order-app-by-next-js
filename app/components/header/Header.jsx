@@ -54,8 +54,9 @@ export default function Header() {
                 </li>
                 <li className="group relative cursor-pointer "> 
                   <Link className=" text-white font-semibold no-underline  flex gap-1 items-center" href="/menu"> Our Menu <span> <MdOutlineKeyboardArrowDown className="text-2xl font-medium transition-all duration-200 group-hover:rotate-180" /> </span></Link>
-                  <ul className="absolute hidden group-hover:block transition-all duration-300 top-[100%] left-[0%] w-[200px] bg-white rounded-md shadow p-3 ">    
-                    <li className="hover:ml-2 transition-all duration-300 "> <Link href="menu2" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Menu Item 2 </Link> </li> 
+                  <ul className="absolute hidden group-hover:block transition-all duration-300 top-[100%] left-[0%] w-[200px] bg-white rounded-md shadow p-3 space-y-3">    
+                    <li className="hover:ml-2 transition-all duration-300 "> <Link href="menu2" className="no-underline capitalize  text-[18px] text-[#787878] font-medium "> Menu Item 2 </Link> </li> 
+                    <li className="hover:ml-2 transition-all duration-300 "> <Link href="menu3" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Menu Item 3 </Link> </li> 
                   </ul>
                 </li>
                 <li> 
