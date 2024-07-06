@@ -9,6 +9,8 @@ import logo from "@/public/assets/logo.png"
 // react icons 
 import { FaPhoneVolume } from "react-icons/fa";
 import { MdOutlineShoppingBag  } from "react-icons/md"; 
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+
 
 export default function Header() {
   const headerRef = useRef(); 
@@ -41,11 +43,20 @@ export default function Header() {
                 <li> 
                   <Link className=" text-white font-semibold no-underline " href="/"> Home </Link>
                 </li>
-                <li> 
-                  <Link className=" text-white font-semibold no-underline " href="/about"> About </Link>
+                <li className="group relative cursor-pointer " > 
+                  <Link className=" text-white font-semibold flex items-center no-underline " href="/about"> About <span> <MdOutlineKeyboardArrowDown className="text-2xl font-medium transition-all duration-200 group-hover:rotate-180" /> </span> </Link>
+                  <ul  className="absolute hidden group-hover:block transition-all duration-300 top-[100%] left-[0%] w-[200px] bg-white rounded-md shadow p-3 space-y-3 ">
+                  <li className="hover:ml-2 transition-all duration-300"> <Link href="/team" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Meet The Team </Link> </li> 
+                  <li className="hover:ml-2 transition-all duration-300 "> <Link href="/#" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Image Galary </Link> </li> 
+                  <li className="hover:ml-2 transition-all duration-300 "> <Link href="/#" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> FAQ.s </Link> </li> 
+                  <li className="hover:ml-2 transition-all duration-300 "> <Link href="/#" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Terms & Service </Link> </li> 
+                  </ul>
                 </li>
-                <li> 
-                  <Link className=" text-white font-semibold no-underline " href="/menu"> Our Menu </Link>
+                <li className="group relative cursor-pointer "> 
+                  <Link className=" text-white font-semibold no-underline  flex gap-1 items-center" href="/menu"> Our Menu <span> <MdOutlineKeyboardArrowDown className="text-2xl font-medium transition-all duration-200 group-hover:rotate-180" /> </span></Link>
+                  <ul className="absolute hidden group-hover:block transition-all duration-300 top-[100%] left-[0%] w-[200px] bg-white rounded-md shadow p-3 ">    
+                    <li className="hover:ml-2 transition-all duration-300 "> <Link href="menu2" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Menu Item 2 </Link> </li> 
+                  </ul>
                 </li>
                 <li> 
                   <Link className=" text-white font-semibold no-underline " href="/shop"> Shop </Link>

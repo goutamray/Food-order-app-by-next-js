@@ -60,7 +60,9 @@ header.fixed .sign-btn button{
    border-color: 1px solid rgb(0, 0, 0) !important;
    color: #000 !important;
  }
-
+ .menu nav ul li ul li a{
+  text-transform: capitalize !important;
+ }
 
 /******* Slider csss *******/
 .custom-swiper {
