@@ -1,5 +1,7 @@
 import Menu2Breadcrumb from "@/app/components/breadCrumb/Menu2Breadcrumb";
 import ProductV2 from "../components/product/ProductV2";
+
+// import images
 import banner2 from "@/public/assets/banner/banner-4.jpg"
 
 const bgStyleBanner2 = {

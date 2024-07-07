@@ -1,6 +1,9 @@
 import Image from "next/image";
+
+// import components  
 import ImageContent2 from "../components/imageContent/ImageContent2";
 import WhatElse from "../components/whatElse/WhatElse";
+import Breadcrumb from "../components/breadCrumb/Breadcrumb";
 
 // images
 import img1 from "@/public/assets/banner/aabb.jpg"
@@ -10,7 +13,6 @@ import img3 from "@/public/assets/banner/pb1.jpg";
 import img4 from "@/public/assets/banner/pb2.jpg";
 import img5 from "@/public/assets/banner/pb3.jpg";
 import Blog from "../components/blog/Blog";
-import Breadcrumb from "../components/breadCrumb/Breadcrumb";
 
 const bgStyleBanner = {
   backgroundImage : `url(${img3.src}) `,

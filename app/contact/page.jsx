@@ -1,9 +1,12 @@
 
+// import components 
 import ContactBreadcrumb from "../components/breadCrumb/ContactBreadcrumb";
+import DownloadBtn from "../components/downloadBtn/DownloadBtn";
+
+// react icons 
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaRegClock } from "react-icons/fa";
 import { FaLayerGroup } from "react-icons/fa";
-import DownloadBtn from "../components/downloadBtn/DownloadBtn";
 
 
 export default function page() {

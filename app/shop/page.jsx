@@ -1,3 +1,5 @@
+
+// import components 
 import ShopBreadcrumb from "../components/breadCrumb/ShopBreadcrumb";
 import Example from "../components/pagination/Example";
 import ProductV2 from "../components/product/ProductV2";

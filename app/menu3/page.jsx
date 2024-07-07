@@ -1,5 +1,7 @@
 import { burgerData } from "@/faker/data";
 import Menu3Breadcrumb from "../components/breadCrumb/Menu3Breadcrumb";
+
+// react icons 
 import { GoDotFill } from "react-icons/go";
 
 export default function page() {

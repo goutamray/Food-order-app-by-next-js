@@ -1,5 +1,9 @@
+
+// import components
 import MenuBreadcrumb from "../components/breadCrumb/MenuBreadcrumb";
 import ProductFilter from "../components/productFilter/ProductFilter";
+
+// import image
 import banner2 from "@/public/assets/banner/banner-4.jpg"
 
 const bgStyleBanner2 = {

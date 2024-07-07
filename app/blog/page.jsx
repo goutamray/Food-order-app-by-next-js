@@ -1,5 +1,11 @@
+
+// import components 
 import BlogBreadcrumb from "../components/breadCrumb/BlogBreadcrumb";
+import BlogSingle2 from "../components/blog/BlogSingle2";
+
+// react icons 
 import { IoSearchSharp } from "react-icons/io5";
+import { SlCalender } from "react-icons/sl";
 
 // blog images 
 import blog from "@/public/assets/blog/blog1.jpg"
@@ -7,9 +13,8 @@ import blog2 from "@/public/assets/blog/blog2.jpg"
 import blog3 from "@/public/assets/blog/blog3.jpg"
 import offer from "@/public/assets/banner/offer-6.jpg"
 
-import BlogSingle2 from "../components/blog/BlogSingle2";
+// import next image 
 import Image from "next/image";
-import { SlCalender } from "react-icons/sl";
 
 const BlogData = [
   {

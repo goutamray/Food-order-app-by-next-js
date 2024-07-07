@@ -59,8 +59,12 @@ export default function Header() {
                     <li className="hover:ml-2 transition-all duration-300 "> <Link href="menu3" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Menu Item 3 </Link> </li> 
                   </ul>
                 </li>
-                <li> 
-                  <Link className=" text-white font-semibold no-underline " href="/shop"> Shop </Link>
+                <li className="group relative cursor-pointer "> 
+                  <Link className=" text-white font-semibold no-underline flex  gap-1" href="/shop"> Shop <span> <MdOutlineKeyboardArrowDown className="text-2xl font-medium transition-all duration-200 group-hover:rotate-180" /> </span> </Link>
+                  <ul className="absolute hidden group-hover:block transition-all duration-300 top-[100%] left-[0%] w-[200px] bg-white rounded-md shadow p-3 space-y-3">    
+                    <li className="hover:ml-2 transition-all duration-300 "> <Link href="/single" className="no-underline capitalize  text-[18px] text-[#787878] font-medium "> Single Product </Link> </li> 
+                  
+                  </ul>
                 </li>
                 <li> 
                   <Link className=" text-white font-semibold no-underline " href="/blog"> Blog </Link>
