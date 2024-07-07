@@ -85,7 +85,7 @@ export default function Header() {
                   </Link>
                 </div>
                 <div className="sign-btn">
-                  <button className="text-md text-black bg-white font-medium px-6 py-2 rounded-full border border-1 border-gray-400 uppercase"> Sign In </button>
+                  <a href="/my-account" className="text-md text-black bg-white font-medium px-6 py-2 rounded-full border border-1 no-underline border-gray-400 uppercase"> Sign In </a>
                 </div>
              </div>
           </div>

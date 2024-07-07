@@ -2,9 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 // import components 
 import ShopBreadcrumb from "../components/breadCrumb/ShopBreadcrumb";
+import Counter from "../components/counter/Counter";
+import ProductV2 from "../components/product/ProductV2";
 
 // react icons
 import { FaStar } from "react-icons/fa";
@@ -14,27 +17,23 @@ import { FaLinkedin } from "react-icons/fa6";
 import { GrPinterest } from "react-icons/gr";
 import { FaCartPlus } from "react-icons/fa";
 
-
-
+// images 
 import burger from "@/public/assets/berger/burger6.png"
 import goutam from "@/public/assets/team/goutam.png"
 
-import Counter from "../components/counter/Counter";
-import { useState } from "react";
-import ProductV2 from "../components/product/ProductV2";
 
 export default function SinglePage() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
     <div>
-        <ShopBreadcrumb title={"PRODUCT DETAILS"}/>
+        <ShopBreadcrumb title= {"PRODUCT DETAILS"}/>
       <div className="container py-20">
          <div className="flex flex-col xl:flex-row  gap-4 xl:gap-6 ">
           {/* product photo */}
           <div className="w-[100%] xl:w-[50%]">
               <div>
-                <Image src={burger} alt="burger" className="h-[500px] w-[600px]"/>
+                <Image src={burger} alt="burger" className="h-[300px] w-[400px] xl:h-[500px] xl:w-[600px] mx-auto"/>
                 <div className="grid grid-cols-2 xl:grid-cols-4 gap-2 place-items-center pt-4 pr-2">
                   <div>
                     <Image src={burger} alt="burger" className="h-28 w-32 border-1 border-gray-200 rounded-md p-2 "/>
@@ -53,7 +52,7 @@ export default function SinglePage() {
           </div>
           {/* product details */}
            <div className="w-[100%] xl:w-[50%]">
-             <h1 className="text-[56px] text-[#642F21] font-bold tracking-tighter "> SOUGH BURGER </h1>
+             <h1 className="text-[30px] xl:text-[56px] text-[#642F21] font-bold tracking-tighter "> SOUGH BURGER </h1>
              {/* price */}
              <div className="flex gap-1 items-center pt-2">
               <h3 className="text-5xl text-[#babbbc] font-bold"> $9.95 </h3>
@@ -111,9 +110,9 @@ export default function SinglePage() {
         <div className="container"> 
             <div>
               <ul className="flex gap-2 items-center justify-center pb-5">
-                <li > <button className={`my-custom-btn text-[18px] text-[#6B6B6B] font-bold no-underline px-3 py-2 rounded-md ${activeTab === 0 && "active" }`} onClick={() => setActiveTab(0)} > Description  </button></li>
-                <li > <button className={`my-custom-btn text-[18px] text-[#6B6B6B] font-bold no-underline px-3 py-2 rounded-md ${activeTab === 1 && "active" }`} onClick={() => setActiveTab(1)} > Additional information   </button></li>
-                <li > <button className={`my-custom-btn text-[18px] text-[#6B6B6B] font-bold no-underline px-3 py-2 rounded-md ${activeTab === 2 && "active" }`} onClick={() => setActiveTab(2)} > Reviews (1) </button></li>
+                <li > <button className={`my-custom-btn text-[16px] xl:text-[18px] text-[#6B6B6B] font-bold no-underline h-[60px] xl:h-auto px-3 py-2 rounded-md ${activeTab === 0 && "active" }`} onClick={() => setActiveTab(0)} > Description </button></li>
+                <li > <button className={`my-custom-btn h-[60px] xl:h-auto text-[16px] xl:text-[18px] text-[#6B6B6B] font-bold no-underline px-3 py-2 rounded-md ${activeTab === 1 && "active" }`} onClick={() => setActiveTab(1)} > Additional information </button></li>
+                <li > <button className={`my-custom-btn h-[60px] xl:h-auto text-[16px] xl:text-[18px] text-[#6B6B6B] font-bold no-underline px-3 py-2 rounded-md ${activeTab === 2 && "active" }`} onClick={() => setActiveTab(2)} > Reviews (1) </button></li>
               </ul>
               {/* description data */}
               {
@@ -149,8 +148,8 @@ export default function SinglePage() {
               {
                 activeTab === 2 && <div>
                 <h2 className="text-[32px] text-[#642F21] font-bold "> Reviews </h2>
-                <div className="flex flex-col xl:flew-row gap-5 pt-3">
-                   <div className="w-[100%] xl:w-[50%]" >
+                <div className="flex flex-col xl:flex-row gap-5 pt-3">
+                   <div className="w-[100%] xl:w-[48%]" >
                        <h4 className="text-[16px] font-bold mb-4 text-[#242424]"> REVIEWS </h4>
                        <div className=" flex gap-4 border-1 border-gray-300 rounded-md p-2">
                                   {/* item-1 */}
@@ -180,7 +179,7 @@ export default function SinglePage() {
                                   </div>
                               </div>
                    </div>
-                   <div className="w-[100%] xl:w-[50%]" >
+                   <div className="w-[100%] xl:w-[48%]" >
                       <h4 className="text-[16px] font-bold mb-4 text-[#242424]"> ADD A REVIEW </h4>
                       <div className="review-form">
                                  <form className="form" > 
