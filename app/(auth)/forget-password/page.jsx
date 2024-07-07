@@ -28,7 +28,7 @@ export default function page() {
           <div>
               <label htmlFor="name" className="text-[18px] font-light text-[#757575]"> Username or email <span className="text-red-500"> * </span> </label>
               <div>
-                 <input type="text" id="name" className=" w-[50%] border-1 border-gray-300  focus:outline-none focus:border-1 focus:border-gray-300 px-3 py-[10px] mt-1"/>
+                 <input type="text" id="name" className="w-[100%] xl:w-[50%] border-1 border-gray-300  focus:outline-none focus:border-1 focus:border-gray-300 px-3 py-[10px] mt-1"/>
               </div>
           </div>
           <div className="mt-4">

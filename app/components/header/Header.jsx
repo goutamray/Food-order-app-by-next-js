@@ -48,8 +48,8 @@ export default function Header() {
                   <ul  className="absolute hidden group-hover:block transition-all duration-300 top-[100%] left-[0%] w-[200px] bg-white rounded-md shadow p-3 space-y-3 ">
                   <li className="hover:ml-2 transition-all duration-300"> <Link href="/team" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Meet The Team </Link> </li> 
                   <li className="hover:ml-2 transition-all duration-300 "> <Link href="/#" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Image Galary </Link> </li> 
-                  <li className="hover:ml-2 transition-all duration-300 "> <Link href="/#" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> FAQ.s </Link> </li> 
-                  <li className="hover:ml-2 transition-all duration-300 "> <Link href="/#" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Terms & Service </Link> </li> 
+                  <li className="hover:ml-2 transition-all duration-300 "> <Link href="/faq" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> FAQ.s </Link> </li> 
+                  <li className="hover:ml-2 transition-all duration-300 "> <Link href="/term" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Terms & Service </Link> </li> 
                   </ul>
                 </li>
                 <li className="group relative cursor-pointer "> 

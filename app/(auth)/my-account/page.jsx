@@ -23,8 +23,8 @@ export default function page() {
     </div>
 
       <div className="container py-10">
-          <div className="flex justify-between gap-4">
-              <div className="w-[100] xl:w-[48%]">
+          <div className="flex flex-col xl:flex-row justify-between gap-4">
+              <div className="w-[100%] xl:w-[48%]">
                 <h2 className="text-[32px] text-[#642F21] font-bold mb-4"> Login </h2>
                 <div className="border border-gray-300 p-3 rounded-md ">
                   <div>
@@ -47,7 +47,7 @@ export default function page() {
                   </div>
                 </div>
               </div>
-              <div  className="w-[100] xl:w-[48%]" >
+              <div  className="w-[100%] xl:w-[48%]" >
                 <h2  className="text-[32px] text-[#642F21] font-bold "> Register </h2>
                 <div className="border border-gray-300 p-3 rounded-md ">
                   <div>
