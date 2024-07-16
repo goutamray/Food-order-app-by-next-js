@@ -20,7 +20,7 @@ export default function page() {
                     burgerData.map((item, index) => {
                         return <div className="w-[370px] md:w-[650px] xl:w-[600px] mb-3 border border-gray-200 shadow-md p-3" key={index}>
                              <div className="flex gap-2  ">
-                               <div className="flex items-center justify-between ">
+                               <div className="flex items-center justify-between relative ">
                                    {/* left  */}
                                     <div className="flex gap-3 items-center w-[280px] md:w-[570px] xl:w-[650px]">
                                       <a className="font-bold text-[18px] xl:text-2xl text-[#642F21] no-underline" href="#"> {item.name}</a>
@@ -39,7 +39,7 @@ export default function page() {
                                           <GoDotFill className=" text-amber-400 text-xs"/>
                                       </span>
                                     </div>                 
-                                    <h2 className="font-bold text-[18px] xl:text-2xl text-[#642F21]"> {item.price} </h2>
+                                    <h2 className="font-bold text-[18px] xl:text-2xl text-[#642F21] absolute -right-[35px] xl:ml-0   xl:right-[15%] top-2"> {item.price} </h2> 
                                  </div>                    
                              </div>
                              {/* bottom part */}
@@ -58,10 +58,10 @@ export default function page() {
                     burgerData.map((item, index) => {
                         return <div className="w-[370px] md:w-[650px] xl:w-[600px] mb-3 border border-gray-200 shadow-md p-3" key={index}>
                              <div className="flex gap-2  ">
-                               <div className="flex items-center justify-between ">
+                               <div className="flex items-center justify-between relative">
                                    {/* left  */}
                                     <div className="flex gap-3 items-center w-[280px] md:w-[570px] xl:w-[650px]">
-                                      <a className="font-bold text-[18px] xl:text-2xl text-[#642F21] no-underline" href="#"> {item.name}</a>
+                                      <a className="font-bold text-[18px] xl:text-2xl text-[#642F21] no-underline" href="#"> {item.name}</a> 
                                       <span className="flex">
                                        
                                           <GoDotFill className=" text-amber-400 text-xs"/>
@@ -77,7 +77,7 @@ export default function page() {
                                           <GoDotFill className=" text-amber-400 text-xs"/>
                                       </span>
                                     </div>                 
-                                    <h2 className="font-bold text-[18px] xl:text-2xl text-[#642F21]"> {item.price} </h2>
+                                    <h2 className="font-bold text-[18px] xl:text-2xl text-[#642F21] absolute -right-[35px]  xl:right-[15%] top-2"> {item.price}  </h2>
                                  </div>                    
                              </div>
                              {/* bottom part */}

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import logo from "@/public/assets/logo.png" 
 
@@ -10,10 +10,17 @@ import logo from "@/public/assets/logo.png"
 import { FaPhoneVolume } from "react-icons/fa";
 import { MdOutlineShoppingBag  } from "react-icons/md"; 
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-
+import { FiMenu } from "react-icons/fi";
+import { RxCross2 } from "react-icons/rx";
 
 export default function Header() {
+  const [open, setOpen ] = useState(false);
   const headerRef = useRef(); 
+
+  // handle open close
+  const handleOpenClose = () => {
+    setOpen(() => (!open))
+  }
 
   useEffect(() => {
      window.addEventListener("scroll", () => {
@@ -30,15 +37,18 @@ export default function Header() {
 
 
   return (
-    <header className="w-full sticky top-0 left-0 z-30 duration-300" ref={headerRef}>
-       <div className="container flex items-center justify-between">
-          <div className="logo xl:mt-4">
+    <header className="w-full sticky top-0 left-0 z-30 duration-300 " ref={headerRef}>
+       <div className="container flex items-center justify-between ">
+         {/* logo part */}
+          <div className="logo pt-3 xl:pt-4">
              <Link href={"/"}> 
                 <Image src={logo} alt="logo" height={90} width={120}/> 
              </Link>
           </div>
+
+          {/* menu part */}
           <div className="menu flex items-center justify-end gap-4 ">
-             <nav className="hidden md:block ">
+             <nav className="hidden xl:block">
                <ul className="flex items-center gap-x-7 mb-0">
                 <li> 
                   <Link className=" text-white font-semibold no-underline " href="/"> Home </Link>
@@ -74,18 +84,32 @@ export default function Header() {
                 </li>
                </ul>
              </nav>
-             <div className="flex gap-3 items-center ">
-                 <div className="hidden md:block "> 
-                    <span className="text-[#F7BE27] text-2xl font-bold flex items-center gap-1 justify-center"> <FaPhoneVolume className="text-2xl text-[#F7BE27] font-bold "/>01755302053 </span>
-                </div>
-                <div className="cart-data">
-                  <Link href={"#"}> 
-                    <MdOutlineShoppingBag  className="text-white text-3xl font-bold "/>   
-                    <span className="cart-count"> 0 </span>
-                  </Link>
-                </div>
-                <div className="sign-btn">
-                  <a href="/my-account" className="text-md text-black bg-white font-medium px-6 py-2 rounded-full border border-1 no-underline border-gray-400 uppercase"> Sign In </a>
+
+             {/***** mobile menu *****/}
+             <div  className="block xl:hidden ">
+                {
+                 open === true ?
+                  <RxCross2 className="text-5xl font-semibold text-[#ed9d07]" onClick={handleOpenClose} /> : 
+                  <FiMenu className="text-5xl font-semibold text-[#ed9d07]" onClick={handleOpenClose} /> 
+                }
+                  
+             </div>
+
+             {/***** contact part *******/}
+             <div className="hidden xl:block ">
+                <div className="flex gap-3 items-center ">
+                    <div > 
+                        <span className="text-[#F7BE27] text-2xl font-bold flex items-center gap-1 justify-center"> <FaPhoneVolume className="text-2xl text-[#F7BE27] font-bold "/>01755302053 </span>
+                    </div>
+                    <div className="cart-data">
+                      <Link href={"#"}> 
+                        <MdOutlineShoppingBag  className="text-white text-3xl font-bold "/>   
+                        <span className="cart-count"> 0 </span>
+                      </Link>
+                    </div>
+                    <div className="sign-btn">
+                      <a href="/my-account" className="text-md text-black bg-white font-medium px-6 py-2 rounded-full border border-1 no-underline border-gray-400 uppercase"> Sign In </a>
+                    </div>
                 </div>
              </div>
           </div>
