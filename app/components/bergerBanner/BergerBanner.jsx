@@ -1,4 +1,5 @@
 
+// images 
 import banner1 from "@/public/assets/berger/berg1.jpg";
 import banner2 from "@/public/assets/berger/berg2.jpg";
 

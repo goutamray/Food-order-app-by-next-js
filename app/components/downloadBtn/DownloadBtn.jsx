@@ -1,9 +1,9 @@
 import Image from "next/image";
+
+// react icons 
 import banner from "@/public/assets/banner/e-shop.png";
 import google from "@/public/assets/banner/googleplay.png";
 import store from "@/public/assets/banner/appstore.png";
-
-
 
 
 export default function DownloadBtn() {

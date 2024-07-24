@@ -79,7 +79,6 @@ header.fixed .sign-btn button{
   height: 650px; /* Set height of each slide */
   color: white; /* Add text color if needed */
 }
-
 .swiper-button-next {
   height: 40px !important;
   width: 40px !important;
@@ -94,7 +93,6 @@ header.fixed .sign-btn button{
   border-radius: 50%;
   opacity: 0;
 }
-
 .swiper-button-next::after  {
   color: rgb(62, 62, 62);
   font-size: 15px !important;
@@ -108,7 +106,7 @@ header.fixed .sign-btn button{
   transition: all ease-in-out 0.3s;
 }
 
-/******* button *******/
+/************ button ***********/
 .my-btn{
   border: 1px solid red !important;
 }
@@ -119,7 +117,7 @@ header.fixed .sign-btn button{
   transition: 0.5 all ease-in-out ;
 }
 
-/**** product css ******/
+/*********** product css ************/
 .product-box ul li.active img{
    opacity: 1;
 }
@@ -137,23 +135,20 @@ span.price{
   font-size: 16px;
   font-weight: 800;
 }
-
 .custom-shadow{
     margin-bottom: 0;
     padding: 25px 20px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgb(0 26 112 / 10%);
-
 }
 button.my-custom-btn.active {
   background-color: #F7BE27;
-  
 }
 
 
 
-/*** testimonial css*****/
+/********* testimonial css **********/
 .testimonial-swiper {
   height: 550px;
 }
@@ -165,7 +160,7 @@ button.my-custom-btn.active {
   color: white; /* Add text color if needed */
 }
 
-/* logo carousel */
+/******* logo carousel *********/
 .custom-swiper-slider{
   height: 280px;
 }
@@ -189,11 +184,11 @@ button.my-custom-btn.active {
     height: 350px; /* Set height of each slide */
     color: white; /* Add text color if needed */
   }
-
   .banner1, .banner2{
     margin: 0px 10px;
-    
   }
+
+  
 }
 
 @media (max-width : 400px) {
@@ -205,6 +200,8 @@ button.my-custom-btn.active {
   padding: 0px 10px;
   max-width: 380px !important;
 }
+
+
 }
 
 

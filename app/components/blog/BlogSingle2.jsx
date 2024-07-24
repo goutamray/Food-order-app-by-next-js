@@ -1,4 +1,6 @@
 import Image from "next/image";
+
+// react icons 
 import { SlCalender } from "react-icons/sl";
 import { FaUser } from "react-icons/fa";
 import { FaRegComment } from "react-icons/fa";

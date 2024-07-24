@@ -1,4 +1,6 @@
 import Image from "next/image";
+
+// images 
 import banner1 from "@/public/assets/banner/offer-1.jpg"
 import banner2 from "@/public/assets/banner/offer-2.jpg"
 import banner3 from "@/public/assets/banner/abcd.jpg"

@@ -9,6 +9,8 @@ import img5 from "@/public/assets/team/team-5.jpg"
 import img6 from "@/public/assets/team/team-6.jpg"
 import img7 from "@/public/assets/team/team-7.jpg"
 import img8 from "@/public/assets/team/team-8.jpg"
+
+
 import SingleTeam from "./SingleTeam";
 
 const Teamdata = [

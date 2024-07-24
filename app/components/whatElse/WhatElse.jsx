@@ -5,6 +5,7 @@ import berger from "@/public/assets/berger/burger-1.svg"
 import berger2 from "@/public/assets/berger/burger2.svg"
 import berger3 from "@/public/assets/berger/chicken.svg"
 import berger4 from "@/public/assets/berger/salad.svg"
+
 import Image from "next/image"
 
 

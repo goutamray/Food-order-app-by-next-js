@@ -2,10 +2,13 @@
 
 
 import Image from "next/image";
+
+// images 
 import burder1 from "@/public/assets/berger/burger-1.svg"
 import burder2 from "@/public/assets/berger/donut.png"
 import burder3 from "@/public/assets/berger/salad.svg"
 import burder4 from "@/public/assets/berger/fried.png"
+
 import ProductV1 from "../product/ProductV1";
 import { useState } from "react";
 

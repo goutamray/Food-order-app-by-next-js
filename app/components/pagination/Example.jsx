@@ -1,4 +1,5 @@
 
+// react icons  
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 

@@ -1,4 +1,6 @@
 import Image from "next/image";
+
+// react images 
 import burger from "@/public/assets/product/burger12.jpg"; 
 import burger2 from "@/public/assets/product/burger13.jpg"; 
 import burger3 from "@/public/assets/product/burger14.jpg"; 

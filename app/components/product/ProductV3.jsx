@@ -1,7 +1,11 @@
 
 import Image from "next/image";
-import { LiaShoppingBagSolid } from "react-icons/lia";
+
+// image 
 import burger from "@/public/assets/product/burger11.jpg"
+
+// react icons 
+import { LiaShoppingBagSolid } from "react-icons/lia";
 
 // material icons 
 import * as React from 'react';

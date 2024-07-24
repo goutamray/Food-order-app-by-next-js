@@ -1,5 +1,7 @@
 
 "use client"
+
+// components 
 import Banner from "./components/banner/Banner";
 import BannerSlider from "./components/bannerSlider/BannerSlider";
 import BergerBanner from "./components/bergerBanner/BergerBanner";

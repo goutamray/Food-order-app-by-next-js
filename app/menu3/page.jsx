@@ -7,7 +7,7 @@ import { GoDotFill } from "react-icons/go";
 export default function page() {
   return (
     <div>
-      <Menu3Breadcrumb title={"Menu Item 3"}/>
+      <Menu3Breadcrumb title={"Menu Item 3"}/> 
       {/* products */}
       <div className="container py-20">
          <div>
@@ -53,6 +53,7 @@ export default function page() {
                     })
                   }
                </div>
+
                <div>
                   {
                     burgerData.map((item, index) => {
@@ -91,8 +92,6 @@ export default function page() {
                     })
                   }
                </div>
-
-              
             </div>
          </div>
       </div>

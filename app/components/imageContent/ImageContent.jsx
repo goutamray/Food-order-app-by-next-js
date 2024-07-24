@@ -1,4 +1,6 @@
 import Image from "next/image";
+
+// react icons 
 import about from "@/public/assets/about.png";
 import berger from "@/public/assets/berger/burger-1.svg"
 import berger2 from "@/public/assets/berger/burger2.svg"

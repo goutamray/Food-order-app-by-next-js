@@ -1,5 +1,9 @@
 import Image from "next/image";
+
+// react images
 import about from "@/public/assets/about.png";
+
+// react icons 
 import { GoDotFill } from "react-icons/go";
 
 export default function ImageContent2() {
