@@ -28,7 +28,7 @@ export default function ProductV2() {
            <div className="flex justify-between items-center">
                 <span > 
                 <Stack spacing={1}>
-                  <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} size="small" readOnly />
+                    <Rating name="read-only" value={5} readOnly  size="small" />
                 </Stack>
                 </span>
                 <Checkbox {...label} icon={<FavoriteBorder />} checkedIcon={<Favorite />}  />

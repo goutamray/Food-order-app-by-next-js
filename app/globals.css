@@ -106,6 +106,28 @@ header.fixed .sign-btn button{
   transition: all ease-in-out 0.3s;
 }
 
+/******* product single *****/
+.bigSlider .single-item-big{
+   overflow: hidden;
+   border-radius: 10px;
+   padding: 3px !important;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+ }
+
+
+.smallSlider .single-item{
+  padding: 3px !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.smallSlider .single-item.active{
+  border: 1px solid rgba(255, 0, 0, 0.625);
+}
+
+
+
 /************ button ***********/
 .my-btn{
   border: 1px solid red !important;

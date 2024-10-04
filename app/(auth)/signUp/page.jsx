@@ -67,8 +67,6 @@ export default function page() {
                    <Link className="text-md font-medium ml-1 no-underline" href="/signIn"> Sign In </Link> 
                </p>
              </div>
-            
-             
           </div>
       </div>
     </div>

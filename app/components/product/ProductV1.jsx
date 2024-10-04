@@ -29,7 +29,7 @@ export default function ProductV1() {
             <span className="price"> $10.35 </span>
             <span > 
             <Stack spacing={1}>
-              <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} size="small" readOnly />
+               <Rating name="read-only" value={5} readOnly  size="small" />
             </Stack>
             </span>
            </div>
