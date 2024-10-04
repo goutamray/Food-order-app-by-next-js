@@ -8,7 +8,6 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaRegClock } from "react-icons/fa";
 import { FaLayerGroup } from "react-icons/fa";
 
-
 export default function page() {
   return (
     <div>
@@ -29,6 +28,7 @@ export default function page() {
                     Daily 11 am to 10 pm </p>
                  </div>
               </div>
+
             {/* column 2 */}
               <div className="custom-shadow flex gap-4">
                  <div className="bg-[#f2f2f2] h-[60px] w-[60px] rounded-full flex justify-center items-center  ">
@@ -42,6 +42,7 @@ export default function page() {
                     Daily 11 am to 10 pm </p>
                  </div>
               </div>
+
             {/* column 3 */}
               <div className="custom-shadow flex gap-4">
                  <div className="bg-[#f2f2f2] h-[60px] w-[60px] rounded-full flex justify-center items-center  ">
@@ -81,7 +82,7 @@ export default function page() {
       </div>
      </div>
      
-     {/* download btn  */}
+     {/****  download btn  */}
       <DownloadBtn />
      </div>
   )
