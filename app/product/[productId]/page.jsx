@@ -44,8 +44,6 @@ export default function SinglePage() {
     smallSlider.current.swiper.slideTo(index);
   }; 
 
-
-
   return (
     <>
       <ShopBreadcrumb title= {"PRODUCT DETAILS"}/>
@@ -308,7 +306,7 @@ export default function SinglePage() {
           <h2 className="text-[25px] xl:text-[60px] text-center mb-4 text-[#642F21] font-bold"> Related Products </h2>
         <div className="productList ">
             <Swiper
-              spaceBetween={20}
+              spaceBetween={15}
               slidesPerView={4}
               loop={true}
               navigation
@@ -320,6 +318,9 @@ export default function SinglePage() {
               modules={[ Navigation, Autoplay ]}
               className="custom-swiper -mt-20" // Add custom class
             >
+                  <SwiperSlide>
+                      <ProductV2 />
+                  </SwiperSlide>
                   <SwiperSlide>
                       <ProductV2 />
                   </SwiperSlide>

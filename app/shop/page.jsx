@@ -43,6 +43,10 @@ export default function page() {
                  <ProductV2 />
                  <ProductV2 />
                  <ProductV2 />    
+                 <ProductV2 />
+                 <ProductV2 />
+                 <ProductV2 />
+                 <ProductV2 />    
              </div>        
           </div>
         <Example />
