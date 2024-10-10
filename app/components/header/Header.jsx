@@ -102,7 +102,7 @@ export default function Header() {
                         <span className="text-[#F7BE27] text-2xl font-bold flex items-center gap-1 justify-center"> <FaPhoneVolume className="text-2xl text-[#F7BE27] font-bold "/>01755302053 </span>
                     </div>
                     <div className="cart-data">
-                      <Link href={"#"}> 
+                      <Link href="/cart"> 
                         <MdOutlineShoppingBag  className="text-white text-3xl font-bold "/>   
                         <span className="cart-count"> 0 </span>
                       </Link>
