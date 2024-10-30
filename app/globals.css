@@ -149,6 +149,11 @@ header.fixed .sign-btn button{
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
   color: red !important;
 }
+span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgress-colorPrimary.btn-loader.css-18lrjg1-MuiCircularProgress-root {
+  height: 30px !important;
+  width: 30px !important;
+  color: #fff;
+}
 span.price{
   background-color: #642f21;
   color: #f7be27;
