@@ -1,6 +1,5 @@
 "use client"
 
-
 import { MyContext } from "@/context/ThemeContext";
 import banner2 from "@/public/assets/banner/cartpage.jpg"; 
 import { postData } from "@/utilis/api";
@@ -9,6 +8,7 @@ import TextField from '@mui/material/TextField';
 import Link from "next/link";
 import { useContext, useState } from "react";
 import { useRouter } from "next/navigation";
+import CircularProgress from '@mui/material/CircularProgress';
 
 const bgStyleBanner2 = {
   backgroundImage : `url(${banner2.src}) `,
@@ -17,7 +17,6 @@ const bgStyleBanner2 = {
   backgroundRepeat : "no-repeat",
 };
 
-import CircularProgress from '@mui/material/CircularProgress';
 
 export default function page() {
   const [formFields, setFormFields] = useState({
@@ -45,9 +44,7 @@ export default function page() {
      setIsLoading(true); 
 
      postData(`/api/v1/user/signUp`, formFields).then((res) => {
-
         if(res?.token !== "" &&  res?.token !== null && res?.token !== undefined){
-
           setTimeout(() => {
              context.alertBox(res.message, "success");
              setIsLoading(false);
@@ -71,7 +68,6 @@ export default function page() {
           }, 4000);
         }
       })
-     
   }
 
 

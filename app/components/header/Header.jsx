@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { MyContext } from "@/context/ThemeContext";
+import { useContext, useEffect, useRef, useState } from "react";
 
 import logo from "@/public/assets/logo.png" 
 
@@ -13,13 +14,32 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 
+import Cookies from "js-cookie" 
+
+// material ui 
+import Avatar from '@mui/material/Avatar';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import Divider from '@mui/material/Divider';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
+import PersonAdd from '@mui/icons-material/PersonAdd';
+import Settings from '@mui/icons-material/Settings';
+import Logout from '@mui/icons-material/Logout';
+import { useRouter } from "next/navigation";
+
 export default function Header() {
-  const [open, setOpen ] = useState(false);
+  const [openMenu, setOpenMenu ] = useState(false);
   const headerRef = useRef(); 
+
+  const context = useContext(MyContext);
+
+  const router = useRouter(); 
 
   // handle open close
   const handleOpenClose = () => {
-    setOpen(() => (!open))
+    setOpenMenu(() => (!openMenu))
   }
 
   useEffect(() => {
@@ -35,6 +55,23 @@ export default function Header() {
      })
   }, []);  
 
+
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  // handle log out 
+  const handleLogOut = () => {
+    handleClose();
+    Cookies.remove('token');
+    context?.setIsLogin(false);
+    router.push("/signIn"); 
+  }
 
   return (
     <header className="w-full sticky top-0 left-0 z-30 duration-300 " ref={headerRef}>
@@ -55,18 +92,40 @@ export default function Header() {
                 </li>
                 <li className="group relative cursor-pointer " > 
                   <Link className=" text-white font-semibold flex items-center no-underline " href="/about"> About <span> <MdOutlineKeyboardArrowDown className="text-2xl font-medium transition-all duration-200 group-hover:rotate-180" /> </span> </Link>
-                  <ul  className="absolute hidden group-hover:block transition-all duration-300 top-[100%] left-[0%] w-[200px] bg-white rounded-md shadow p-3 space-y-3 ">
-                  <li className="hover:ml-2 transition-all duration-300"> <Link href="/team" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Meet The Team </Link> </li> 
-                  <li className="hover:ml-2 transition-all duration-300 "> <Link href="/#" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Image Galary </Link> </li> 
-                  <li className="hover:ml-2 transition-all duration-300 "> <Link href="/faq" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> FAQ.s </Link> </li> 
-                  <li className="hover:ml-2 transition-all duration-300 "> <Link href="/term" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Terms & Service </Link> </li> 
+                      <ul  className="absolute hidden group-hover:block transition-all duration-300 top-[100%] left-[0%] w-[200px] bg-white rounded-md shadow p-3 space-y-3 ">
+                        <li className="hover:ml-2 transition-all duration-300"> 
+                          <Link 
+                             href="/team" 
+                             className="no-underline capitalize text-[18px] text-[#787878] font-medium ">
+                               Meet The Team 
+                          </Link>
+                         </li> 
+                      <li className="hover:ml-2 transition-all duration-300 "> 
+                        <Link 
+                           href="/#" 
+                           className="no-underline capitalize  text-[18px] text-[#787878] font-medium "> Image Galary 
+                          </Link>
+                       </li> 
+                     <li className="hover:ml-2 transition-all duration-300">       <Link 
+                        href="/faq" 
+                        className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> FAQ.s 
+                       </Link> 
+                      </li> 
+                     <li className="hover:ml-2 transition-all duration-300 "> <Link href="/term" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Terms & Service </Link> </li> 
                   </ul>
                 </li>
                 <li className="group relative cursor-pointer "> 
                   <Link className=" text-white font-semibold no-underline  flex gap-1 items-center" href="/menu"> Our Menu <span> <MdOutlineKeyboardArrowDown className="text-2xl font-medium transition-all duration-200 group-hover:rotate-180" /> </span></Link>
                   <ul className="absolute hidden group-hover:block transition-all duration-300 top-[100%] left-[0%] w-[200px] bg-white rounded-md shadow p-3 space-y-3">    
-                    <li className="hover:ml-2 transition-all duration-300 "> <Link href="menu2" className="no-underline capitalize  text-[18px] text-[#787878] font-medium "> Menu Item 2 </Link> </li> 
-                    <li className="hover:ml-2 transition-all duration-300 "> <Link href="menu3" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Menu Item 3 </Link> </li> 
+                      <li className="hover:ml-2 transition-all duration-300 "> 
+                          <Link href="menu2" className="no-underline capitalize  text-[18px] text-[#787878] font-medium ">
+                            Menu Item 2 
+                         </Link> 
+                    </li> 
+                    <li className="hover:ml-2 transition-all duration-300 "> 
+                       <Link href="menu3" className="no-underline capitalize  text-[18px] text-[#787878] font-medium  "> Menu Item 3 
+                      </Link> 
+                    </li> 
                   </ul>
                 </li>
                 <li className="group relative cursor-pointer "> 
@@ -88,7 +147,7 @@ export default function Header() {
              {/***** mobile menu *****/}
              <div  className="block xl:hidden ">
                 {
-                 open === true ?
+                 openMenu === true ?
                   <RxCross2 className="text-5xl font-semibold text-[#ed9d07]" onClick={handleOpenClose} /> : 
                   <FiMenu className="text-5xl font-semibold text-[#ed9d07]" onClick={handleOpenClose} /> 
                 }
@@ -108,7 +167,83 @@ export default function Header() {
                       </Link>
                     </div>
                     <div className="sign-btn">
-                      <Link href="/signUp" className="text-md text-black bg-white font-medium px-6 py-2 rounded-full border border-1 no-underline border-gray-400 uppercase"> Sign In </Link>
+                      {
+                        context.isLogin === false ?   
+                        <Link href="/signUp" className="text-md text-black bg-white font-medium px-6 py-2 rounded-full border border-1 no-underline border-gray-400 uppercase"> Sign In </Link> : (
+                          <> 
+                            <Tooltip title="Account settings">
+                              <IconButton
+                                onClick={handleClick}
+                                size="small"
+                                sx={{ ml: 2 }}
+                                aria-controls={open ? 'account-menu' : undefined}
+                                aria-haspopup="true"
+                                aria-expanded={open ? 'true' : undefined}
+                              >
+                                <Avatar className="capitalize" sx={{ width: 32, height: 32 }}>{context?.user?.name?.charAt(0)}</Avatar>
+                              </IconButton>
+                          </Tooltip>
+                          <Menu
+                              anchorEl={anchorEl}
+                              id="account-menu"
+                              open={open}
+                              onClose={handleClose}
+                              onClick={handleClose}
+                              slotProps={{
+                                paper: {
+                                  elevation: 0,
+                                  sx: {
+                                    overflow: 'visible',
+                                    filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
+                                    mt: 1.5,
+                                    '& .MuiAvatar-root': {
+                                      width: 32,
+                                      height: 32,
+                                      ml: -0.5,
+                                      mr: 1,
+                                    },
+                                    '&::before': {
+                                      content: '""',
+                                      display: 'block',
+                                      position: 'absolute',
+                                      top: 0,
+                                      right: 14,
+                                      width: 10,
+                                      height: 10,
+                                      bgcolor: 'background.paper',
+                                      transform: 'translateY(-50%) rotate(45deg)',
+                                      zIndex: 0,
+                                    },
+                                  },
+                                },
+                              }}
+                              transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+                              anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+                            >
+                              <MenuItem onClick={handleClose}>
+                                <Avatar /> Profile
+                              </MenuItem>
+                              <MenuItem onClick={handleClose}>
+                                <Avatar /> My account
+                              </MenuItem>
+                              <Divider />
+                              <MenuItem onClick={handleClose}>
+                                <ListItemIcon>
+                                  <Settings fontSize="small" />
+                                </ListItemIcon>
+                                Settings
+                              </MenuItem>
+                              <MenuItem onClick={handleLogOut}>
+                                <ListItemIcon>
+                                  <Logout fontSize="small" />
+                                </ListItemIcon>
+                                Logout
+                              </MenuItem>
+                            </Menu>
+                        </>
+                        )
+                      }
+                    
                     </div>
                 </div>
              </div>

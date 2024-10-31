@@ -77,8 +77,8 @@ export default function LogoCarousel() {
           
             navigation
             modules={[Navigation, Pagination, Autoplay, EffectFade ]}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log('slide change')}
+            // onSwiper={(swiper) => console.log(swiper)}
             className="custom-swiper-slider " // Add custom class
           >
             {data.map((item, index) => (

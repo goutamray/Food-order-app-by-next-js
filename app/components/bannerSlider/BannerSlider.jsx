@@ -40,8 +40,8 @@ export default function BannerSlider() {
       }}
       navigation
       modules={[Navigation, Pagination, Autoplay, EffectFade ]}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      // onSlideChange={() => console.log('slide change')}
+      // onSwiper={(swiper) => console.log(swiper)}
       className="custom-swiper -mt-20" // Add custom class
     >
       {slides.map(slide => (

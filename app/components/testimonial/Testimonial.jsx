@@ -72,8 +72,8 @@ export default function Testimonial() {
       }}
       navigation
       modules={[Navigation, Pagination, Autoplay, EffectFade ]}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      // onSlideChange={() => console.log('slide change')}
+      // onSwiper={(swiper) => console.log(swiper)}
       className="testimonial-swiper " // Add custom class
     >
       {data.map((item, index)=> (

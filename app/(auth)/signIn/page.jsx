@@ -1,11 +1,16 @@
 
 "use client"
 
+import { MyContext } from "@/context/ThemeContext";
 import banner2 from "@/public/assets/banner/cartpage.jpg"; 
-// import google from "@/public/assets/google.png"
+import { postData } from "@/utilis/api";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Link from "next/link";
+import { useRouter } from 'next/navigation';
+import { useContext, useState } from "react";
+import CircularProgress from '@mui/material/CircularProgress';
+import Cookies from "js-cookie"
 
 const bgStyleBanner3 = {
   backgroundImage : `url(${banner2.src}) `,
@@ -16,7 +21,60 @@ const bgStyleBanner3 = {
 
 
 
-export default function page() {
+export default function SignIn() {
+  const [formFields, setFormFields] = useState({
+    email : "",
+    password : ""
+ })
+ const [isLoading, setIsLoading] = useState(false); 
+
+ const context = useContext(MyContext); 
+ const router = useRouter();
+
+   // handle input change 
+   const handleInputChange = (e) => {
+    setFormFields((prevState) => ({
+         ...prevState,
+         [e.target.name] : e.target.value 
+    }))
+  }
+
+
+  // handle Form Submit 
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    setIsLoading(true); 
+
+    postData(`/api/v1/user/signIn`, formFields).then((res) => {
+      if(res?.token !== "" &&  res?.token !== null && res?.token !== undefined){
+        setTimeout(() => {
+           context.alertBox(res?.message, "success");
+           setIsLoading(false);
+           setFormFields({
+               email : "",
+               password : ""
+           }); 
+           router.push('/'); // Redirect to the sign-in page
+           Cookies.set('token', res?.token);
+           Cookies.set('user', JSON.stringify(res?.user), {expires : 30} );
+           context?.setIsLogin(true)
+        }, 1000);
+        
+      }else{
+        context.alertBox(res?.message, "error");
+        setTimeout(() => {
+          setIsLoading(false);
+          setFormFields({
+            email : "",
+            password : ""
+        }); 
+        }, 4000);
+      }
+    })
+
+  }
+
+
   return (
     <div>
       {/* breadcrumb  */}
@@ -32,25 +90,38 @@ export default function page() {
       </div> 
     </div>
 
-      <div className="container py-10">
-          <h2 className="text-center text-3xl font-bold mb-4"> Login </h2>
+      <div className="container py-9">
+          <h2 className="text-center text-3xl font-bold mb-3"> Login </h2>
           <div className="register-form w-[500px] mx-auto shadow p-5 ">
-             <form >
+             <form onSubmit={handleFormSubmit}>
                  <Box sx={{ width: 500, maxWidth: '100%', margin: "auto"}}  >
                      <TextField 
                          fullWidth 
                          label="Email" 
                          id="fullWidth"
-                         className="mb-3"  
+                         className="mb-3"
+                         name="email"
+                         value={formFields.email}
+                         onChange={handleInputChange} 
+                         disabled={isLoading === true ? true : false} 
                         />
                      <TextField 
                          fullWidth 
                          label="Password" 
                          id="fullWidth" 
                          className="mb-3" 
+                         name="password"
+                         value={formFields.password}
+                         onChange={handleInputChange}
+                         disabled={isLoading === true ? true : false}
                         />
                  </Box>
-                 <button className="bg-[#E3000E] text-white px-4 py-2 w-full text-xl font-semibold rounded-md"> Login </button>
+                 <button className="bg-[#E3000E] text-white px-4 py-2 w-full text-xl font-semibold rounded-md"> 
+                    {
+                      isLoading === true ?  
+                      <CircularProgress className="btn-loader"/> : "LOGIN"
+                    }
+                  </button>
              </form>
              <div className="or-btn text-center py-3">
                <p> Dont have an Account 
@@ -61,7 +132,6 @@ export default function page() {
                 <button className="text-xl font-semibold border-1 w-full rounded-md text-center border-gray-500 py-2 flex justify-center items-center mx-auto gap-2">
                     <img src="/assets/google.png" alt="google" />
                     <p className="mb-0 relative ">  Login With Google  </p>
-                   
                 </button>
              </div>
              
