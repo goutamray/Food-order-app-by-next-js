@@ -214,8 +214,6 @@ button.my-custom-btn.active {
   .banner1, .banner2{
     margin: 0px 10px;
   }
-
-  
 }
 
 @media (max-width : 400px) {
@@ -227,8 +225,6 @@ button.my-custom-btn.active {
   padding: 0px 10px;
   max-width: 380px !important;
 }
-
-
 }
 
 
