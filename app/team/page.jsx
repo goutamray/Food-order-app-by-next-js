@@ -12,6 +12,7 @@ import img8 from "@/public/assets/team/team-8.jpg"
 
 
 import SingleTeam from "./SingleTeam";
+import DownloadBtn from "../components/downloadBtn/DownloadBtn";
 
 const Teamdata = [
    {
@@ -70,17 +71,19 @@ export default function page() {
     <div>
       <TeamBreadcrumb title={"MEET THE TEAM"}/>
       {/* All team data */}
-      <div className="team py-12">
-        <div className="container">
+      <div className="team py-20">
+        <div className="container ">
            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 place-items-center ">
               {
-               Teamdata.map((item, index) => {
+               Teamdata?.map((item, index) => {
                 return <SingleTeam key={index} item={item}/> 
                })
               }
            </div>
         </div>
       </div>
+
+      <DownloadBtn /> 
     </div>
   )
 }

@@ -8,7 +8,6 @@ import Breadcrumb from "../components/breadCrumb/Breadcrumb";
 // images
 import img1 from "@/public/assets/banner/aabb.jpg"
 import img2 from "@/public/assets/banner/bbcc.jpg"
-
 import img3 from "@/public/assets/banner/pb1.jpg";
 import img4 from "@/public/assets/banner/pb2.jpg";
 import img5 from "@/public/assets/banner/pb3.jpg";
@@ -21,6 +20,7 @@ const bgStyleBanner = {
   backgroundRepeat : "no-repeat",
 };
 
+// banner image 
 const bgStyleBanner2 = {
   backgroundImage : `url(${img4.src}) `,
   backgroundSize : "cover",

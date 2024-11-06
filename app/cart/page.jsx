@@ -1,5 +1,6 @@
 import Image from "next/image"
 import CartBreadcrumb from "../components/breadCrumb/CartBreadCrumb"
+import Counter from "../components/counter/Counter";
 import burger from "@/public/assets/product/burger11.jpg"
 
 // react icons 
@@ -7,7 +8,6 @@ import { FaRegTrashAlt } from "react-icons/fa";
 import { PiSignOutBold } from "react-icons/pi";
 
 import Rating from '@mui/material/Rating';
-import Counter from "../components/counter/Counter";
 import Link from "next/link";
 
 const Cart = () => {

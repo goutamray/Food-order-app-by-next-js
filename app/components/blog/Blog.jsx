@@ -39,11 +39,10 @@ export default function Blog() {
           </div>
            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center gap-4 pt-5">
             {
-              BlogData.map((item, index) => {
-                return  <BlogSingle key={index} item={item}/>
+              BlogData?.map((item, index) => {
+                return <BlogSingle key={index} item={item}/>
               })
             }
-            
            </div>
       </div> 
     </div>

@@ -59,10 +59,10 @@ header.fixed .logo {
 header.fixed .sign-btn button{
    border-color: 1px solid rgb(0, 0, 0) !important;
    color: #000 !important;
- }
- .menu nav ul li ul li a{
+}
+.menu nav ul li ul li a{
   text-transform: capitalize !important;
- }
+}
 
 /******* Slider csss *******/
 .custom-swiper {
@@ -113,8 +113,6 @@ header.fixed .sign-btn button{
    padding: 3px !important;
    border: 1px solid rgba(0, 0, 0, 0.1);
  }
-
-
 .smallSlider .single-item{
   padding: 3px !important;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -125,9 +123,6 @@ header.fixed .sign-btn button{
 .smallSlider .single-item.active{
   border: 1px solid rgba(255, 0, 0, 0.625);
 }
-
-
-
 /************ button ***********/
 .my-btn{
   border: 1px solid red !important;
@@ -172,9 +167,6 @@ span.price{
 button.my-custom-btn.active {
   background-color: #F7BE27;
 }
-
-
-
 /********* testimonial css **********/
 .testimonial-swiper {
   height: 550px;
@@ -201,19 +193,20 @@ button.my-custom-btn.active {
 
 /******** responsive css *********/
 @media (max-width : 576px) {
-  .custom-swiper {
-    height: 350px; /* Set height of the Swiper container */
-  }
-  .custom-swiper .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 350px; /* Set height of each slide */
-    color: white; /* Add text color if needed */
-  }
-  .banner1, .banner2{
-    margin: 0px 10px;
-  }
+.custom-swiper {
+  height: 350px; /* Set height of the Swiper container */
+}
+.custom-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px; /* Set height of each slide */
+  color: white; /* Add text color if needed */
+}
+.banner1, .banner2{
+  margin: 0px 10px;
+}
+
 }
 
 @media (max-width : 400px) {

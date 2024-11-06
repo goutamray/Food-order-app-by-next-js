@@ -20,8 +20,3 @@ export default function MenuBreadcrumb({ title }) {
   )
 }
 
-
-
-
-
-

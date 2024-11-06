@@ -20,7 +20,6 @@ const bgStyleBanner3 = {
 };
 
 
-
 export default function SignIn() {
   const [formFields, setFormFields] = useState({
     email : "",
@@ -71,7 +70,6 @@ export default function SignIn() {
         }, 4000);
       }
     })
-
   }
 
 

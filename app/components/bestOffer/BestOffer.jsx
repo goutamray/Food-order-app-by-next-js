@@ -49,16 +49,16 @@ export default function BestOffer() {
           }}
         >
           <SwiperSlide>
-            <ProductV3 />
+              <ProductV3 />
           </SwiperSlide>
           <SwiperSlide>
-            <ProductV3 />
+              <ProductV3 />
           </SwiperSlide>
           <SwiperSlide>
-            <ProductV3 />
+              <ProductV3 />
           </SwiperSlide>
           <SwiperSlide>
-            <ProductV3 />
+              <ProductV3 />
           </SwiperSlide>
         </Swiper>
       </div>
